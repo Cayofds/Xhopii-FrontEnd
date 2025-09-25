@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <title>Xhopii - Cupom</title>
+</head>
+<body>
+    <header>
+        <section id="cabecalho-logo">
+            <img src="../img/logo.png">
+            <h1>Xhopii</h1>
+        </section>
+        <section id="cabecalho-logout">
+            <a href="login.html">Sair</a>
+        </section>
+    </header>
+
+    <nav class="menu-horizontal">
+        <ul>
+            <li><a href="./view/home.html">Home</a></li>
+            <li><a href="./view/cadastroCliente.html">Cadastro Cliente</a></li>
+            <li><a href="./view/cadastroFuncionario.html">Cadastro Funcionário</a></li>
+            <li><a href="./view/cadastroProduto.html">Cadastro Produto</a></li>
+            <li><a href="./view/cadastrarCupom.html">Cadastro Cupom</a></li>
+            <li><a href="./view/verCliente.html">Ver Clientes</a></li>
+            <li><a href="./view/verFuncionario.html">Ver Funcionários</a></li>
+            <li><a href="./view/verProduto.html">Ver Produtos</a></li>
+            <li><a href="./view/verCupom.html">Ver Cupons</a></li>
+        </ul>
+    </nav>
+</body>
+
+<section class="conteudo-cadastro">
+        <section class="conteudo-formulario-cadastro">
+            <form id="form-log" method="POST" action="">
+                <h2>Cadastro de Cupom</h2>
+                <label for="codigo">Código do Cupom:</label>
+                <input type="text" id="codigo" name="codigo" required>
+
+                <label for="desconto">Desconto (%):</label>
+                <input type="number" id="desconto" name="desconto" min="0" max="100" required>
+
+                <label for="validade">Data de Validade:</label>
+                <input type="date" id="validade" name="validade" required>
+
+                <button type="submit">Cadastrar Cupom</button>
+            </form>
+        </section>
+    </section>
+
+<footer class="rodape-login">
+        <img src="../img/footer-login.png">
+        <hr>
+        <p>© 2025 Xhopii. Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
