@@ -510,3 +510,10 @@ footer {
     justify-content: center;
   }
 }
+
+.direitos {
+    text-align: center;
+    color: #585858;
+    font-size: small;
+    margin-top: 60px;
+}
