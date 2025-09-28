@@ -59,6 +59,8 @@ body {
     text-align: right;
 }
 
+
+
 /* ================== NAV MENU ================== */
 .menu-horizontal {
     width: 100%;
@@ -186,6 +188,67 @@ body {
 
 .conteudo-formulario a:hover {
     text-decoration: underline;
+}
+
+
+/* ================== LOGIN EXTRAS ================== */
+
+/* Links abaixo do botão de login */
+.links-secundarios {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto 15px;
+    font-size: 13px;
+}
+
+.links-secundarios a {
+    color: rgb(251,86,48);
+    text-decoration: none;
+}
+
+.links-secundarios a:hover {
+    text-decoration: underline;
+}
+
+
+/* OU */
+.conteudo-formulario p {
+    text-align: center;
+    margin: 15px 0;
+    color: #666;
+    font-size: 13px;
+}
+
+/* Redes sociais */
+.login-social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0 20px;
+}
+
+.login-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login-social a img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.login-social a:hover {
+    background-color: #f9f9f9;
 }
 
 /* ================== VISUALIZAR CADASTROS ================== */

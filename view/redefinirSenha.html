@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <title>Xhopii - Redefinir Senha</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho-login">
+        <section id="cabecalho-login-logo">
+            <img src="../img/logo.png" alt="Logo Xhopii">
+            <h1>Xhopii</h1>
+            <p>Redefinir senha</p>
+        </section>
+        <section id="cabecalho-login-ajuda">
+            <p>Precisa de ajuda?</p>
+        </section>
+    </header>
+
+    <!-- Conteúdo -->
+    <div class="conteudo-form bg-cinza">
+        <div class="conteudo-formulario">
+            <form id="form-reset" onsubmit="alert('Instruções de redefinição de senha foram enviadas.');window.location.href='login.html'; return false;">
+                
+                <label for="inputEmailReset">Redefinir senha</label>
+                <input type="email" id="inputEmailReset" placeholder="Email" name="inputEmailReset" required>
+                
+                <input class="botao" type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer></footer>
+    <script src="../script/elementos-padroes.js"></script>
+</body>
+</html>

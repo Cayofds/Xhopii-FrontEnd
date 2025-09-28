@@ -2,15 +2,16 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="icon" href="../img/logo.png" type="image/png">
     <title>Xhopii - Login</title>
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header class="cabecalho-login">
         <section id="cabecalho-login-logo">
-            <img src="../img/logo.png">
+            <img src="../img/logo.png" alt="Logo Xhopii">
             <h1>Xhopii</h1>
             <p>Entre</p>
         </section>
@@ -19,17 +20,34 @@
         </section>
     </header>
 
-    <section class="conteudo-login">
-        <section class="conteudo-formulario">
-            <form id="form-log" method="get" action="home.html">
-                <label id="input-log">Entre</label>
-                <input id="input-log" type="text" placeholder="Email" name="inputEmailLog">
-                <input id="input-log" type="password" placeholder="Senha" name="inputSenhaLog">
-                <input id="botao-log" type="submit" value="ENTRE">
+    <!-- Conteúdo -->
+    <div class="conteudo-form bg-laranja">
+        <div class="conteudo-formulario">
+            <form id="form-login" onsubmit="window.location.href='home.html'; return false;">
+                
+                <label for="inputEmailLog">Login</label>
+                <input type="email" id="inputEmailLog" placeholder="Email" name="inputEmailLog" required>
+                <input type="password" id="inputSenhaLog" placeholder="Senha" name="inputSenhaLog" required>
+                
+                <input class="botao" type="submit" value="Entre">
+
+                <div class="links-secundarios">
+                    <a href="./redefinirSenha.html">Esqueci minha senha</a>
+                    <a href="#">Fazer login com SMS</a>
+                </div>
+
+                <p>OU</p>
+
+                <div class="login-social">
+                    <a href="#"><img src="../img/logo-facebook-cicle.png" alt="Facebook">Facebook</a>
+                    <a href="#"><img src="../img/logo-google.png" alt="Google">Google</a>
+                    <a href="#"><img src="../img/logo-apple.png" alt="Apple">Apple</a>
+                </div>
+
+                <p>Novo na Xhopii? <a href="cadastroCliente.html">Cadastrar</a></p>
             </form>
-            <p>Novo na Xhopii? <a href="cadastroCliente.html">Cadastrar</a></p>
-        </section>
-    </section>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer></footer>
