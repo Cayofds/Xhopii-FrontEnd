@@ -11,19 +11,30 @@
 
     <!-- Header e Nav -->
     <div id="topo-site"></div>
+        <div class="conteudo-form bg-cinza">
+        <div class="conteudo-formulario">
+            <form id="form-log" onsubmit="window.location.href='home.html'; return false;">
 
-    <section class="conteudo-cadastro">
-        <section class="conteudo-formulario-cadastro">
-            <form id="form-log"onsubmit="window.location.href='home.html'; return false;">
-                <label>Cadastrar Produto</label>
-                <input type="text" placeholder="Nome" name="inputNomeProd">
-                <input type="text" placeholder="Fabricante" name="inputFabricanteProd">
-                <input type="text" placeholder="Descrição" name="inputDescricaoProd">
-                <input type="text" placeholder="Valor" name="inputValorProd">
-                <input id="botao" type="submit" value="Cadastrar">
+            <h2 style="text-align: center; color: rgb(251,86,48); margin-bottom: 20px;">
+                Cadastrar Produto
+            </h2>
+
+            <input type="text" placeholder="Nome" name="inputNomeProd">
+            <input type="text" placeholder="Fabricante" name="inputFabricanteProd">
+            <input type="text" placeholder="Descrição" name="inputDescricaoProd">
+            <input type="text" placeholder="Valor" name="inputValorProd">
+
+            <label style="text-align: center; display: block; margin-top: 20px;">Selecione a imagem do produto:</label>
+            <div class="input-file">
+                <label for="arquivoProd">Escolher arquivo</label>
+                <input type="file" id="arquivoProd" name="inputFoto">
+                <span id="nome-arquivo-prod">Nenhum arquivo escolhido</span>
+            </div>
+
+            <input id="botao" class="botao" type="submit" value="Cadastrar">
             </form>
-        </section>
-    </section>
+        </div>
+        </div>
 
     <!-- Footer -->
     <footer></footer>

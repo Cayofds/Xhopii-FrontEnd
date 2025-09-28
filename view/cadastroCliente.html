@@ -12,21 +12,30 @@
     <!-- Header e Nav -->
     <div id="topo-site"></div>
 
-    <section class="conteudo-cadastro">
-        <section class="conteudo-formulario-cadastro">
+    <div class="conteudo-form bg-cinza">
+        <div class="conteudo-formulario">
             <form id="form-log" onsubmit="window.location.href='home.html'; return false;">
-                <label>Cadastrar Cliente</label>
-                <input type="text" placeholder="Nome" name="inputNome">
-                <input type="text" placeholder="Sobrenome" name="inputSobrenome">
-                <input type="text" placeholder="CPF" name="inputCPF">
-                <input type="date" placeholder="Data Nascimento" name="inputDataNasc">
-                <input type="text" placeholder="Telefone" name="inputTelefone">
-                <input type="text" placeholder="Email" name="inputEmail">
-                <input type="password" placeholder="Senha" name="inputSenha">
-                <input id="botao" type="submit" value="Cadastrar">
+            
+                <label for="inputNome">Cadastrar Cliente</label>
+                <input type="text" id="inputNome" placeholder="Nome" name="inputNome">
+                <input type="text" id="inputSobrenome" placeholder="Sobrenome" name="inputSobrenome">
+                <input type="text" id="inputCPF" placeholder="CPF" name="inputCPF">
+                <input type="date" id="inputDataNasc" placeholder="Data Nascimento" name="inputDataNasc">
+                <input type="text" id="inputTelefone" placeholder="Telefone" name="inputTelefone">
+                <input type="text" id="inputEmail" placeholder="Email" name="inputEmail">
+                <input type="password" id="inputSenha" placeholder="Senha" name="inputSenha">
+                
+                <label style="text-align: center;">Selecione foto de perfil:</label>
+                <div class="input-file">
+                    <label for="arquivo">Escolher arquivo</label>
+                    <input type="file" id="arquivo" name="inputFoto">
+                    <span id="nome-arquivo">Nenhum arquivo escolhido</span>
+                </div>
+
+                <input id="botao" class="botao" type="submit" value="Cadastrar">
             </form>
-        </section>
-    </section>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer></footer>

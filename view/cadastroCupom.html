@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <title>Xhopii - Cadastrar Cupom</title>
+</head>
+<body>
+
+    <!-- Header e Nav -->
+    <div id="topo-site"></div>
+
+    <div class="conteudo-form bg-cinza">
+        <div class="conteudo-formulario">
+            <form onsubmit="window.location.href='verCupons.html'; return false;">
+
+                <h2 style="text-align: center; color: rgb(251,86,48); margin-bottom: 20px;">
+                    Cadastrar Cupom
+                </h2>
+
+                <input type="text" placeholder="Código do Cupom" name="inputCodigoCupom">
+                <input type="text" placeholder="Descrição" name="inputDescricaoCupom">
+                <input type="number" placeholder="Percentual de Desconto (%)" name="inputPercentualCupom">
+                <input type="date" placeholder="Data de Validade" name="inputValidadeCupom">
+                <input type="number" placeholder="Quantidade Disponível" name="inputQtdCupom">
+
+                <input class="botao" type="submit" value="Cadastrar">
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer></footer>
+    <script src="../script/elementos-padroes.js"></script>
+</body>
+</html>

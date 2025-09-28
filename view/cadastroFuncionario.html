@@ -12,21 +12,40 @@
     <!-- Header e Nav -->
     <div id="topo-site"></div>
 
-    <section class="conteudo-cadastro">
-        <section class="conteudo-formulario-cadastro">
-            <form id="form-log"onsubmit="window.location.href='home.html'; return false;">
-                <label>Cadastrar Funcionario</label>
-                <input type="text" placeholder="Nome" name="inputNomeFunc">
-                <input type="text" placeholder="Sobrenome" name="inputSobrenomeFunc">
-                <input type="text" placeholder="CPF" name="inputCPFFunc">
-                <input type="date" placeholder="Data Nascimento" name="inputDataNascFunc">
-                <input type="text" placeholder="Telefone" name="inputTelefoneFunc">
-                <input type="text" placeholder="Email" name="inputEmailFunc">
-                <input type="text" placeholder="Salário" name="inputSalarioFunc">
-                <input id="botao" type="submit" value="Cadastrar">
+    <div class="conteudo-form bg-cinza">
+        <div class="conteudo-formulario">
+            <form id="form-log" onsubmit="window.location.href='home.html'; return false;">
+
+            <h2 style="text-align: center; color: rgb(251,86,48); margin-bottom: 20px;">
+                Cadastrar Funcionário
+            </h2>
+
+            <input type="text" id="inputNomeFunc" placeholder="Nome" name="inputNomeFunc">
+
+            <input type="text" id="inputSobrenomeFunc" placeholder="Sobrenome" name="inputSobrenomeFunc">
+
+            <input type="text" id="inputCPFFunc" placeholder="CPF" name="inputCPFFunc">
+
+            <input type="date" id="inputDataNascFunc" placeholder="Data de Nascimento" name="inputDataNascFunc">
+
+            <input type="text" id="inputTelefoneFunc" placeholder="Telefone" name="inputTelefoneFunc">
+
+            <input type="text" id="inputEmailFunc" placeholder="Email" name="inputEmailFunc">
+
+            <input type="text" id="inputSalarioFunc" placeholder="Salário" name="inputSalarioFunc">
+
+            <label style="text-align: center; display: block; margin-top: 20px;">Selecione foto de perfil:</label>
+            <div class="input-file">
+                <label for="arquivoFunc">Escolher arquivo</label>
+                <input type="file" id="arquivoFunc" name="inputFoto">
+                <span id="nome-arquivo-func">Nenhum arquivo escolhido</span>
+            </div>
+
+            <input id="botao" class="botao" type="submit" value="Cadastrar">
             </form>
-        </section>
-    </section>
+        </div>
+    </div>
+
 
     <!-- Footer -->
     <footer></footer>
